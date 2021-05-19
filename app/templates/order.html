@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{title}} Customer Order</title>
+</head>
+<body>
+    <Header>
+        <h1>Customer Order</h1>
+    </Header>
+
+    <section class="container">
+    <div>
+        <br>
+        <p>{{order.customer_name}} </p>
+        <p> Quantity: {{order.quantity}}</p>
+        <p>Game Title: {{order.game_title}}</p>
+        <p>{{order.order_date}}</p>
+    </div> 
+    </section>
+    
+</body>
+</html>
